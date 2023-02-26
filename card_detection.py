@@ -268,8 +268,8 @@ def distance(x1, y1, x2, y2):
 
 if __name__ == '__main__':
 	filename = sys.argv[1]
-	training_image_filename_list = [ "card_database/train_S.jpg", "card_database/train_H.jpg", "card_database/train_D.jpg", "card_database/train_C.jpg", "card_database/train_1_7_another.jpg"] #add cards to training
-	training_labels_filename_list = ["card_database/label.txt"]	
+	training_image_filename_list = [ "card_data/train_S.jpg", "card_data/train_H.jpg", "card_data/train_D.jpg", "card_data/train_C.jpg", "card_data/train_1_7_another.jpg"] #add cards to training
+	training_labels_filename_list = ["card_data/label.txt"]	
 	
 	training = get_training(training_labels_filename_list, training_image_filename_list)
 
