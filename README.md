@@ -2,11 +2,10 @@
 ## Card Detector: Implemented by image processing
 * It can still be used even in low-light or highly reflective environments.
 * Can be quickly implemented on other card types by taking a group of photos and marking the label.
-
-![image_1](https://user-images.githubusercontent.com/69178839/221424319-c2b368b5-02c3-44da-b625-753f69ca304f.jpg)
-![image_detection_1](https://user-images.githubusercontent.com/69178839/221424320-2be7fa11-0b71-496e-83b4-0fe66a22fe99.jpg)
-![image_2](https://user-images.githubusercontent.com/69178839/221424322-8eb8f4e6-69e9-4350-b019-13b129cdc039.jpg)
-![image_detection_2](https://user-images.githubusercontent.com/69178839/221424325-21032c28-c1c2-40ee-bdb3-755a61a2b2fc.jpg)
+<img src="https://user-images.githubusercontent.com/69178839/221424319-c2b368b5-02c3-44da-b625-753f69ca304f.jpg" width="900">
+<img src="https://user-images.githubusercontent.com/69178839/221424320-2be7fa11-0b71-496e-83b4-0fe66a22fe99.jpg" width="900">
+<img src="https://user-images.githubusercontent.com/69178839/221424322-8eb8f4e6-69e9-4350-b019-13b129cdc039.jpg" width="900">
+<img src="https://user-images.githubusercontent.com/69178839/221424325-21032c28-c1c2-40ee-bdb3-755a61a2b2fc.jpg" width="900">
 
 ## Usage
 
@@ -21,11 +20,12 @@
 ## Method
 ### Card Extraction
 * Use the threshold value obtained by the Otsu algorithm to do binarization to avoid adverse light effects.
-![thresh by Otsu](https://user-images.githubusercontent.com/69178839/221427277-e0fd53f0-d090-4c5d-a061-f81ae9968e24.jpg)
-![draw contours](https://user-images.githubusercontent.com/69178839/221427787-6781ae2c-655d-4b69-a80d-02a7ccaca2d9.jpg)
+<img src="https://user-images.githubusercontent.com/69178839/221427277-e0fd53f0-d090-4c5d-a061-f81ae9968e24.jpg" width="900">
+<img src="https://user-images.githubusercontent.com/69178839/221427787-6781ae2c-655d-4b69-a80d-02a7ccaca2d9.jpg" width="900">
+
 ### Correct the card
-* Transform the slanted cards in the original image to rectangles by perspective transformation.
-    <img src="https://user-images.githubusercontent.com/69178839/221427849-95676ecd-e594-4eb2-b27d-dcebe120766a.png" alt="Cover" width="33%"/>
+* Transform the slanted cards in the original image to rectangles by perspective transformation.  
+    <img src="https://user-images.githubusercontent.com/69178839/221427849-95676ecd-e594-4eb2-b27d-dcebe120766a.png" width="25%"/>
 
 ### Take out the corner part and compare it with the labeled card
 * Using a specially designed adaptive threshold, you can see that most of the information can be retained even if the reflection is severe.  
